@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kids Muay Thai | MUAY THAI LONDON</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface": "#131315", "on-surface": "#e5e1e4", "surface-container-low": "#1c1b1d",
+          "surface-container": "#201f22", "surface-variant": "#353437", "secondary-fixed": "#e2e2e2",
+          "on-primary-fixed-variant": "#5f4100", "tertiary": "#d6d4d7", "primary-fixed-dim": "#ffba32",
+          "outline": "#9e8f79", "inverse-surface": "#e5e1e4", "secondary": "#c6c6c7",
+          "on-secondary-fixed": "#1a1c1c", "on-error": "#690005", "on-secondary-fixed-variant": "#454747",
+          "tertiary-fixed-dim": "#c8c6c9", "surface-container-lowest": "#0e0e10",
+          "tertiary-fixed": "#e4e1e5", "tertiary-container": "#bab8bc", "surface-container-highest": "#353437",
+          "surface-bright": "#39393b", "secondary-fixed-dim": "#c6c6c7", "on-tertiary": "#303033",
+          "on-tertiary-container": "#49494c", "on-error-container": "#ffdad6",
+          "primary-container": "#f3ac02", "on-tertiary-fixed": "#1b1b1e", "on-primary-container": "#634400",
+          "on-primary-fixed": "#271900", "primary": "#ffcd7a", "primary-fixed": "#ffdeab",
+          "on-background": "#e5e1e4", "on-secondary-container": "#b4b5b5", "on-surface-variant": "#d5c4ac",
+          "inverse-primary": "#7e5700", "error-container": "#93000a", "on-secondary": "#2f3131",
+          "secondary-container": "#454747", "inverse-on-surface": "#313032", "on-primary": "#422c00",
+          "on-tertiary-fixed-variant": "#47464a", "error": "#ffb4ab", "surface-container-high": "#2a2a2c",
+          "background": "#131315", "surface-tint": "#ffba32", "outline-variant": "#514533",
+          "surface-dim": "#131315"
+        },
+        spacing: { "stack-lg": "32px", "stack-sm": "8px", "margin-mobile": "20px", "unit": "4px", "margin-desktop": "64px", "stack-md": "16px", "gutter": "24px", "container-max": "1280px" }
+      }
+    }
+  }
+</script>
+<style>
+  body { background-color: #131315; color: #e5e1e4; font-family: 'Sora', sans-serif; overflow-x: hidden; }
+  .glass-panel { background: rgba(24,24,27,0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+  .gold-glow { box-shadow: 0 0 30px rgba(243,172,2,0.1); }
+  .text-gradient { background: linear-gradient(135deg, #ffcd7a 0%, #f3ac02 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .active-dot { width: 4px; height: 4px; border-radius: 50%; background-color: #f3ac02; display: inline-block; margin-right: 6px; }
+  #mobile-menu { display: none; }
+  #mobile-menu.open { display: block; }
+</style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Navigation -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <div class="flex items-center gap-4">
+      <img alt="MTSC Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE5MO_We5hTgucGl8pVByHGtOhiQdBv3fGJBFW_CGBpnrewEXa_7h_Y88M1E3tLFh_fNAifZ1-wQOdDTngyTm_susOHutjMKO1YqP13FdTcvNQkLpyv5YObg53qC2zj3jMfgECTTyq-Yc2sWk2KUlBlP07KqzIKFD4TulX1D9rKkyq1hMfJv9mu-IhWBBK6W_-Gswoxt7XJbvXaPCUDMqtod_tM_3HhKWKOJp3sE85osNVUXdJi2w4o3z3A-_tAuUHyvLZDUTDStcO"/>
+      <span class="font-display text-headline-md font-bold text-primary tracking-tighter hidden sm:block">MUAY THAI LONDON</span>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="index.html">Home</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="classes.html">Adult Classes</a>
+      <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="kids.html">Kids Classes</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="corporate.html">Corporate</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="community.html">Community</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="backpackers.html">Backpackers</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold hover:scale-95 active:scale-90 transition-transform">Join Us</button>
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+      </button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="md:hidden bg-surface border-t border-outline-variant/20 px-margin-mobile py-4 flex flex-col gap-4">
+    <a class="text-on-surface-variant font-medium font-label-md" href="index.html">Home</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="classes.html">Adult Classes</a>
+    <a class="text-primary font-bold font-label-md" href="kids.html">Kids Classes</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="corporate.html">Corporate</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="community.html">Community</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="backpackers.html">Backpackers</a>
+  </div>
+</header>
+
+<main class="pt-24">
+  <!-- Hero Section -->
+  <section class="relative min-h-[80vh] flex items-center px-margin-mobile md:px-margin-desktop py-stack-lg overflow-hidden">
+    <div class="relative z-10 max-w-3xl">
+      <span class="inline-block px-3 py-1 rounded-full bg-surface-variant/30 border border-outline-variant/30 text-primary font-label-sm text-label-sm mb-6">Next Generation Excellence</span>
+      <h1 class="font-display text-display text-on-surface leading-[1.1] mb-8">Developing <span class="text-gradient">Resilience</span> through Tradition.</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">Beyond technique, we build character. Our Kids Muay Thai program provides a structured, safe environment where children develop physical coordination, mental discipline, and lasting confidence.</p>
+      <div class="flex flex-wrap gap-4">
+        <a class="px-8 py-4 bg-primary-container text-on-primary-container rounded-lg font-bold text-lg hover:shadow-[0_0_20px_rgba(243,172,2,0.4)] transition-all" href="#trial">Book a Free Trial</a>
+        <a class="px-8 py-4 border border-outline-variant text-on-surface rounded-lg font-bold text-lg hover:bg-surface-variant/20 transition-all" href="#curriculum">Explore Curriculum</a>
+      </div>
+    </div>
+    <div class="hidden lg:block absolute right-margin-desktop top-1/2 -translate-y-1/2 w-1/3 aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+      <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAweMiRg1DCy0C72L1VadSvMTevstJbHmPkJ5GmQ57Zb7DiiPq1saIhdtFOh9aMRMS2_oQ4ktjQNcVf--Chyf589hFAECF01_q3jdqtnxSal81N1fOLMpSautcW-Qp6fNpvIa__a3misLQ2J0qoAVJvXszr2mhiULMeOtu6EegdcGhBY9TP4BrwI0blxbuba2zaEqTv5b1h_B9FGdnR3lvnyuCHPr8_3iq7LKtpCFZmaYbZOFyKnIcMtrB6TbsTvZlhzz9q7SCiV7tz')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+    </div>
+  </section>
+
+  <!-- Core Values Bento Grid -->
+  <section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-lowest">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-headline-lg text-on-surface mb-4">Building Stronger Foundations</h2>
+        <p class="text-on-surface-variant font-body-md text-body-md max-w-xl mx-auto">We focus on three core pillars that transform our students both on and off the mats.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-panel p-10 rounded-2xl group hover:border-primary/30 transition-all duration-500">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+          </div>
+          <h3 class="font-display text-headline-md text-on-surface mb-4">Unshakeable Confidence</h3>
+          <p class="text-on-surface-variant font-body-md leading-relaxed">Students learn to overcome challenges through incremental goals, fostering a healthy sense of self-worth and the courage to face peer pressure.</p>
+        </div>
+        <div class="glass-panel p-10 rounded-2xl group hover:border-primary/30 transition-all duration-500">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary text-3xl">fitness_center</span>
+          </div>
+          <h3 class="font-display text-headline-md text-on-surface mb-4">Physical Mastery</h3>
+          <p class="text-on-surface-variant font-body-md leading-relaxed">Muay Thai develops elite levels of balance, flexibility, and spatial awareness. It's the ultimate full-body workout that feels like play.</p>
+        </div>
+        <div class="glass-panel p-10 rounded-2xl group hover:border-primary/30 transition-all duration-500">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+          </div>
+          <h3 class="font-display text-headline-md text-on-surface mb-4">Lifelong Community</h3>
+          <p class="text-on-surface-variant font-body-md leading-relaxed">We cultivate a culture of respect. Our students find a second family here, learning the value of teamwork and mutual encouragement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Age Group Breakdowns -->
+  <section class="px-margin-mobile md:px-margin-desktop py-24" id="curriculum">
+    <div class="max-w-container-max mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div class="max-w-2xl">
+          <h2 class="font-display text-headline-lg text-on-surface mb-4">Tailored Learning Streams</h2>
+          <p class="text-on-surface-variant font-body-md">We recognize that a 5-year-old and a 12-year-old have different developmental needs. Our classes are strictly divided by age to ensure appropriate coaching.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="relative overflow-hidden rounded-3xl group">
+          <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYmEO7NH_wh-9e5GGHho6uMouGLkrGpUR9dTAsIGczaFmdBVYbBitJqJMtERGiei8JFOCfbIdCR0OFHjbkMS3UoV4Lu0EKOh83qF6zRmhva_wo93jpnVwgYFB95HCmOlIDiPciIIGaOjIw4npdjw5lAAVRoR_ITB8H63LOWIMXsGP1mYnu0QsFH2p_3EHU6wFo5n4FsydiM8m8pSOugKL8MI3q_0YAuJ1E25bQ7krjdPNTVyEC_t6hTIbtB1TxMRXgkU6m7MpFr9nc')"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+          <div class="relative p-10 pt-64 h-full flex flex-col justify-end">
+            <div class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-label-sm font-bold w-max mb-4">Ages 5 - 8</div>
+            <h3 class="font-display text-headline-lg text-on-surface mb-2">Little Lions</h3>
+            <p class="text-on-surface-variant font-body-md mb-6">Focus on listening skills, basic motor control, and introduction to the '8 Limbs' through fun, engaging drills.</p>
+            <ul class="space-y-2 mb-8">
+              <li class="flex items-center text-sm"><span class="active-dot"></span> Fundamental Balance</li>
+              <li class="flex items-center text-sm"><span class="active-dot"></span> Discipline &amp; Etiquette</li>
+              <li class="flex items-center text-sm"><span class="active-dot"></span> Movement Awareness</li>
+            </ul>
+            <button class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">View Timetable <span class="material-symbols-outlined">north_east</span></button>
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-3xl group">
+          <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0xb_e2NnqzuT-heZjrVNUDXe7zmfSfAUACEVPuaRxryg14Kh97aTjZwWq3bdGhC-iR5ZNQtTC4kChHremn9M5KcePhGhQRg5HG86kBEyzFjoyPOf1iaemBrOovywTjm2zf3jWSG5M34i3As4uhCz7dDZhBd9o1TpHBafdd9Wuy8VMeZ4ElmeJ4ffCq-KEc_XZJfRisEoQP_vnSe9SFH6qLv-rh_pCfxijCSjK0lStng7XbpmaKQJb7khIOYPWK1TZX2o-uyMwpjyx')"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+          <div class="relative p-10 pt-64 h-full flex flex-col justify-end">
+            <div class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-label-sm font-bold w-max mb-4">Ages 9 - 12</div>
+            <h3 class="font-display text-headline-lg text-on-surface mb-2">Junior Warriors</h3>
+            <p class="text-on-surface-variant font-body-md mb-6">Transitioning towards technical proficiency, strategy, and partner work in a controlled, respectful environment.</p>
+            <ul class="space-y-2 mb-8">
+              <li class="flex items-center text-sm"><span class="active-dot"></span> Advanced Striking Tech</li>
+              <li class="flex items-center text-sm"><span class="active-dot"></span> Strategy &amp; Focus</li>
+              <li class="flex items-center text-sm"><span class="active-dot"></span> Mentorship Opportunities</li>
+            </ul>
+            <button class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">View Timetable <span class="material-symbols-outlined">north_east</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-low overflow-hidden relative">
+    <div class="max-w-container-max mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+        <div>
+          <h2 class="font-display text-headline-lg text-on-surface mb-8">Voices from our Community</h2>
+          <div class="space-y-8">
+            <div class="glass-panel p-8 rounded-2xl relative">
+              <span class="absolute top-4 right-8 text-primary/20 font-display text-6xl">"</span>
+              <p class="font-body-lg text-on-surface italic mb-4 leading-relaxed">"MTSC has been transformative for my son. He used to be quite shy, but after six months of training, his confidence has skyrocketed. The coaches are firm but incredibly supportive."</p>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-surface-variant border border-outline-variant"></div>
+                <div><div class="font-bold text-on-surface">Sarah J.</div><div class="text-sm text-on-surface-variant">Parent of Leo (Age 7)</div></div>
+              </div>
+            </div>
+            <div class="glass-panel p-8 rounded-2xl relative">
+              <span class="absolute top-4 right-8 text-primary/20 font-display text-6xl">"</span>
+              <p class="font-body-lg text-on-surface italic mb-4 leading-relaxed">"The focus on discipline and respect is what sets this place apart. It's not just about fighting; it's about being a better person. My daughter looks forward to every session."</p>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-surface-variant border border-outline-variant"></div>
+                <div><div class="font-bold text-on-surface">Mark T.</div><div class="text-sm text-on-surface-variant">Parent of Maya (Age 11)</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block relative">
+          <div class="aspect-square rounded-full border-[1px] border-primary/20 absolute -inset-10 animate-[spin_20s_linear_infinite]"></div>
+          <div class="aspect-square rounded-full border-[1px] border-outline-variant/10 absolute -inset-20 animate-[spin_30s_linear_infinite_reverse]"></div>
+          <div class="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
+            <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCxuIff5N6PeaNUY8vfO5ZCkSd5NS0U6XblRWMC6826xWwEWHj1RU_lXBIRuDcmtMs0hDCOSh9YfySmfQMaqjwx5LVMBNq_7eEYjxiwied9vGU6zXyqFDqzo8RXwJ-tau6RnHl3n4T5esez0BeX5CtIaI29Saq-wzJ6XL6lBbS00ThLi2JHe3nvvM-uSaXJxaT49wn3Xz7n3PM5kCu6WSAna7Y4-YS8EyMr_uGaJgiDqerxYqLyqfLhNMYr25NATa27QY9Zh2pq0Ht')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="px-margin-mobile md:px-margin-desktop py-24" id="trial">
+    <div class="max-w-container-max mx-auto">
+      <div class="relative bg-primary-container rounded-[2rem] p-12 md:p-20 overflow-hidden">
+        <div class="relative z-10 max-w-2xl">
+          <h2 class="font-display text-headline-lg text-on-primary-fixed mb-6 leading-tight">Start Your Journey Today. The First Class is on Us.</h2>
+          <p class="text-on-primary-fixed-variant font-body-lg mb-10">Book a free trial session for your child. No experience or equipment required—we'll take care of everything.</p>
+          <form class="flex flex-col md:flex-row gap-4">
+            <input class="flex-grow px-6 py-4 rounded-xl bg-white/20 border-white/30 text-on-primary-fixed placeholder:text-on-primary-fixed/50 focus:ring-2 focus:ring-on-primary-fixed outline-none" placeholder="Enter your email address" type="email"/>
+            <button class="px-10 py-4 bg-on-primary-fixed text-primary-fixed rounded-xl font-bold hover:scale-105 transition-transform" type="submit">Book Free Trial</button>
+          </form>
+          <div class="mt-8 flex items-center gap-6">
+            <div class="flex -space-x-3">
+              <div class="w-10 h-10 rounded-full border-2 border-primary-container bg-surface-variant"></div>
+              <div class="w-10 h-10 rounded-full border-2 border-primary-container bg-surface-variant"></div>
+              <div class="w-10 h-10 rounded-full border-2 border-primary-container bg-surface-variant"></div>
+            </div>
+            <span class="text-sm font-medium text-on-primary-fixed-variant">Join 200+ local families at MTSC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+    <div class="space-y-6">
+      <div class="font-display text-headline-sm font-bold text-primary">MUAY THAI LONDON</div>
+      <p class="text-on-surface-variant text-sm max-w-xs">Elevating martial arts through technical precision and community focus in the heart of London.</p>
+    </div>
+    <div class="space-y-4">
+      <div class="font-bold text-on-surface">Explore</div>
+      <ul class="space-y-2">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="index.html">Home</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="classes.html">Adult Classes</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="corporate.html">Corporate</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="community.html">Community</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="backpackers.html">Backpackers</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <div class="font-bold text-on-surface">Connect</div>
+      <ul class="space-y-2">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Instagram</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">TikTok</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <div class="font-bold text-on-surface">Company</div>
+      <ul class="space-y-2">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Locations</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/5 flex justify-between items-center text-label-sm text-on-surface-variant">
+    <span>© 2024 Muay Thai London. All rights reserved.</span>
+    <div class="flex gap-6"><span>SafeGuard Certified</span><span>DBS Enhanced</span></div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.glass-panel, section h2').forEach(el => {
+      el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+      observer.observe(el);
+    });
+  });
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

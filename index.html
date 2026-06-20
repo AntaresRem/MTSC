@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MUAY THAI LONDON | MTSC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-variant": "#353437",
+          "secondary-fixed": "#e2e2e2",
+          "surface-dim": "#131315",
+          "on-surface": "#e5e1e4",
+          "surface-container-low": "#1c1b1d",
+          "surface-container": "#201f22",
+          "tertiary": "#d6d4d7",
+          "on-primary-fixed-variant": "#5f4100",
+          "primary-fixed-dim": "#ffba32",
+          "inverse-surface": "#e5e1e4",
+          "outline": "#9e8f79",
+          "secondary": "#c6c6c7",
+          "on-secondary-fixed-variant": "#454747",
+          "on-secondary-fixed": "#1a1c1c",
+          "on-error": "#690005",
+          "tertiary-fixed": "#e4e1e5",
+          "tertiary-fixed-dim": "#c8c6c9",
+          "surface-container-lowest": "#0e0e10",
+          "surface-bright": "#39393b",
+          "tertiary-container": "#bab8bc",
+          "surface-container-highest": "#353437",
+          "surface": "#131315",
+          "secondary-fixed-dim": "#c6c6c7",
+          "on-tertiary": "#303033",
+          "primary-container": "#f3ac02",
+          "on-tertiary-fixed": "#1b1b1e",
+          "on-primary-container": "#634400",
+          "on-primary-fixed": "#271900",
+          "on-tertiary-container": "#49494c",
+          "on-error-container": "#ffdad6",
+          "primary-fixed": "#ffdeab",
+          "on-background": "#e5e1e4",
+          "primary": "#ffcd7a",
+          "error-container": "#93000a",
+          "on-secondary-container": "#b4b5b5",
+          "on-surface-variant": "#d5c4ac",
+          "inverse-primary": "#7e5700",
+          "secondary-container": "#454747",
+          "inverse-on-surface": "#313032",
+          "on-primary": "#422c00",
+          "on-secondary": "#2f3131",
+          "surface-container-high": "#2a2a2c",
+          "on-tertiary-fixed-variant": "#47464a",
+          "error": "#ffb4ab",
+          "surface-tint": "#ffba32",
+          "outline-variant": "#514533",
+          "background": "#131315"
+        },
+        borderRadius: {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        spacing: {
+          "stack-md": "16px",
+          "gutter": "24px",
+          "container-max": "1280px",
+          "unit": "4px",
+          "margin-desktop": "64px",
+          "stack-lg": "32px",
+          "stack-sm": "8px",
+          "margin-mobile": "20px"
+        },
+        fontFamily: {
+          "headline-lg-mobile": ["Sora"],
+          "label-md": ["Sora"],
+          "headline-lg": ["Sora"],
+          "display": ["Sora"],
+          "body-md": ["Sora"],
+          "label-sm": ["Sora"],
+          "headline-md": ["Sora"],
+          "body-lg": ["Sora"]
+        },
+        fontSize: {
+          "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+          "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+          "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+  .glass-card {
+    background: rgba(24,24,27,0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  body {
+    background-color: #131315;
+    color: #e5e1e4;
+    scroll-behavior: smooth;
+  }
+  #mobile-menu { display: none; }
+  #mobile-menu.open { display: block; }
+</style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-3 max-w-container-max mx-auto">
+    <div class="flex items-center gap-4">
+      <img alt="MTSC Logo" class="h-10 w-auto md:h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE5MO_We5hTgucGl8pVByHGtOhiQdBv3fGJBFW_CGBpnrewEXa_7h_Y88M1E3tLFh_fNAifZ1-wQOdDTngyTm_susOHutjMKO1YqP13FdTcvNQkLpyv5YObg53qC2zj3jMfgECTTyq-Yc2sWk2KUlBlP07KqzIKFD4TulX1D9rKkyq1hMfJv9mu-IhWBBK6W_-Gswoxt7XJbvXaPCUDMqtod_tM_3HhKWKOJp3sE85osNVUXdJi2w4o3z3A-_tAuUHyvLZDUTDStcO"/>
+      <div class="font-display text-headline-md font-bold text-primary tracking-tighter hidden sm:block">MTSC</div>
+    </div>
+    <div class="hidden md:flex gap-8 items-center">
+      <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md" href="index.html">Home</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md" href="classes.html">Adult Classes</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md" href="kids.html">Kids Classes</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md" href="corporate.html">Corporate</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md" href="community.html">Community</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md" href="backpackers.html">Backpackers</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md font-bold hover:scale-95 active:scale-90 transition-transform">Join Us</button>
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden bg-surface border-t border-outline-variant/20 px-margin-mobile py-4 flex flex-col gap-4">
+    <a class="text-primary font-bold font-label-md" href="index.html">Home</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="classes.html">Adult Classes</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="kids.html">Kids Classes</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="corporate.html">Corporate</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="community.html">Community</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="backpackers.html">Backpackers</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background"></div>
+    <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZGODaxH1A6OT2x-GNFcnYRO7Y6ZlqztkvjIG1iIHmRfVBVD695cpUBpPlLfcEnCky15VaiFzT6gX2O97x5Eo3aF-ezoZkd7k9j4jpuahIC6YQyiijoyFz3Ag6nTUr_wrIAwOlVzdBMw4GeeMUTxazAalApALEPYNYkgf4aLara3ldR9R5EmMHXGaeL1mPDpbCSH4crt0w8VCLxB6mCKZV6aid7Rt3mQ_xrSjuT8cP34-P6H_YxVBoG_Rpmi3AGc_lWYug9cecZNyO')"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="max-w-3xl">
+      <h1 class="font-display text-[64px] md:text-[96px] leading-[1] font-extrabold text-on-background tracking-tight mb-8">
+        Train. <br/>Meet. <br/><span class="text-primary">Repeat.</span>
+      </h1>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="classes.html" class="bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-label-md font-bold hover:scale-95 transition-transform text-center">Come to a Free Session</a>
+        <a href="community.html" class="border border-on-surface text-on-surface px-10 py-4 rounded-full font-label-md font-bold hover:bg-on-surface/10 transition-all text-center">See What We're About</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Reframe Strip -->
+<section class="py-24 bg-surface-container-lowest">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid md:grid-cols-2 gap-12 items-center reveal">
+      <div>
+        <h2 class="font-display text-headline-lg md:text-display text-primary mb-6">This Isn't Your Typical Gym</h2>
+      </div>
+      <div class="space-y-6">
+        <p class="font-body-lg text-on-surface-variant">MTSC started in the local parks of East London. We didn't have mirrors, fancy lighting, or ego. We just had pads, grass, and a shared drive to get better.</p>
+        <p class="font-body-lg text-on-surface-variant">Today, we've moved indoors, but those park roots stay with us. It's about more than just a workout—it's about finding your people in the city and building something real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Community in Action (Bento Mosaic) -->
+<section class="py-24 overflow-hidden">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <h3 class="font-display text-headline-lg text-center mb-16 reveal">Community in Action</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:h-[600px] reveal">
+      <div class="col-span-2 row-span-2 rounded-xl overflow-hidden group">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXOcfGv8N8vKlmYl65tMBhiJJOQZS_TIs6jNVd7Gsmmam5YWVctevagzl284RGbQLGEnZk2qduFo1Jeup9d07R8HR1CyBi4h5LoDGPoL8F7ggvY8FQyUBcYR6F0PTxMmhMnazxHt-Cc26i3bfnhS1tM_sDKIHWcbv_9z2x1dqcWsXnSRXA6iQ3kHoZJ6MZyRLlHNxxX39Ti0tNhsjRLrqDk5LrWg9q534Ba1PYQzjImkpWPI9OmNTSEJoggyqBkV-ViDNqIyFI80js')"></div>
+      </div>
+      <div class="rounded-xl overflow-hidden group">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-w5GE6ugQrfa4JSAN6ejb1nWYMZsAjnmNa8rI6ilyayDkiH9YX6hYfYGPJ-s8NMPFyidA2Wq7csqlDMb_SvwmXOsgZl00eRowFcjWRETxO7XLhoETcaloCfP2zPyMUp3ImnbckqpvjJqT_afH8Wfpxxizk4jM0K9XPoxId72ta9n-FRL53n_MJGtvX_UBKrUnH5lYEXMo6SYSMBTtVv5TeJmw96g10H1K4Uk3tkXoUbpdWxhHqdJ8QfQ8MTU4NZB8zC86MwxRXkAo')"></div>
+      </div>
+      <div class="rounded-xl overflow-hidden group">
+        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgEhr4S6Q39RE3-Hhe_Q67kPN-vFP8Iq4ovzFfDIZCkeRR5JrDJ-J5kbjI4W8QRvGMwH4y0Du8jbXAZXiwWY__AJ1xxIxabIZXEt5I3292OC8dcdIPQ_SaCUkMOBEGQyx3g4Onge1tvlHYSc1LSjDTmvyBcZwVhWDlkkB8gdnrlebl-Xb9nZ5eLkURc0e3OJ-TTsNQ297hVyDj2Q9_x5VimDEuZ1uI6RNpPNoYB-15l283k1gs8c8EGA0kTl7Cgz79LjDoQ26I294u')"></div>
+      </div>
+      <div class="col-span-2 rounded-xl overflow-hidden group glass-card p-stack-lg flex flex-col justify-center relative">
+        <span class="material-symbols-outlined text-primary text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+        <p class="font-body-lg text-on-surface italic mb-4">"I moved to London knowing nobody. At MTSC, I found more than a gym—I found a social life and a family that pushes me to be better every single day."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">A</div>
+          <div>
+            <p class="font-label-md text-on-surface">Alex M.</p>
+            <p class="font-label-sm text-on-surface-variant">Member since 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What Happens at MTSC -->
+<section class="py-24 bg-surface-container">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="reveal">
+        <div class="w-16 h-16 bg-primary-container/10 rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary-container text-3xl">fitness_center</span>
+        </div>
+        <h4 class="font-display text-headline-md text-on-surface mb-4">Train</h4>
+        <p class="text-on-surface-variant">No fluff. Just world-class technique, sweat, and sessions that leave you feeling sharper and stronger. We train hard, but we train together.</p>
+      </div>
+      <div class="reveal" style="transition-delay: 100ms;">
+        <div class="w-16 h-16 bg-primary-container/10 rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary-container text-3xl">groups</span>
+        </div>
+        <h4 class="font-display text-headline-md text-on-surface mb-4">Meet</h4>
+        <p class="text-on-surface-variant">The pub after class, the Friday socials, the weekend park runs. We make sure the 'club' in MTSC actually means something.</p>
+      </div>
+      <div class="reveal" style="transition-delay: 200ms;">
+        <div class="w-16 h-16 bg-primary-container/10 rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary-container text-3xl">refresh</span>
+        </div>
+        <h4 class="font-display text-headline-md text-on-surface mb-4">Repeat</h4>
+        <p class="text-on-surface-variant">Consistency is the secret sauce. We make our sessions so enjoyable that you won't even realize you've made training a permanent habit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Events -->
+<section class="py-24">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="flex justify-between items-end mb-12 reveal">
+      <h3 class="font-display text-headline-lg">Upcoming Events</h3>
+      <a class="text-primary font-label-md flex items-center gap-2 hover:underline" href="community.html">View Full Calendar <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-gutter reveal">
+      <div class="glass-card rounded-xl p-8 hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+        <div class="flex justify-between items-start mb-6">
+          <div class="bg-primary/10 text-primary px-3 py-1 rounded text-sm font-bold uppercase tracking-wider">Session</div>
+          <div class="text-on-surface-variant font-label-sm">4 SPOTS LEFT</div>
+        </div>
+        <h5 class="font-display text-headline-md mb-2 group-hover:text-primary transition-colors">Tuesday Evening Session — Shoreditch</h5>
+        <p class="text-on-surface-variant mb-6">6:30 PM - 8:00 PM • Shoreditch High St Studio</p>
+        <div class="flex items-center gap-2 text-primary font-bold">Book Your Spot <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chevron_right</span></div>
+      </div>
+      <div class="glass-card rounded-xl p-8 hover:-translate-y-2 transition-all duration-300 group cursor-pointer border-l-4 border-primary">
+        <div class="flex justify-between items-start mb-6">
+          <div class="bg-primary/10 text-primary px-3 py-1 rounded text-sm font-bold uppercase tracking-wider">Social</div>
+          <div class="text-on-surface-variant font-label-sm">OPEN INVITE</div>
+        </div>
+        <h5 class="font-display text-headline-md mb-2 group-hover:text-primary transition-colors">Friday Social — Hackney</h5>
+        <p class="text-on-surface-variant mb-6">8:30 PM Onwards • The Hackney Tap</p>
+        <div class="flex items-center gap-2 text-primary font-bold">Count Me In <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chevron_right</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Roots of the Club -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid md:grid-cols-2 gap-24 items-center">
+      <div class="relative reveal">
+        <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary"></div>
+        <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary"></div>
+        <div class="aspect-square rounded-lg bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnjzAik6GFxZdTjTnAmH8ApUK7WrWATf9dJCQRIaWXMYdy8pEBpQ81NGlx5NHtmVF_xtkKeHVQ-jByU5qjdFXQB__SXKUSp1zINj_qZAg4XO-Q8kz0_Mmw1-IN6z_4Yh7LrlTQkoLDrjj2XynNVWb-oi7RyP_4oAYBCFy2T83CI2jai_VgdAdYBWxoj4M7M78RxcRDEEMgCCduGUWk5bDBwR0VdZgEVJCPrdOs_sE6WJjMMaqmfudpC-ckH_9J-cMAr82k7h1bHVai')"></div>
+      </div>
+      <div class="reveal">
+        <h3 class="font-display text-headline-lg mb-6">The Roots of the Club</h3>
+        <p class="font-body-lg text-on-surface-variant mb-8 leading-relaxed">MTSC wasn't born in a boardroom. It was born out of a desire to create a space where hard training met genuine connection. Our founders started with just two sets of pads and a vision for a club that prioritized community over vanity.</p>
+        <a class="inline-flex items-center gap-3 font-label-md font-bold text-on-surface group" href="community.html">
+          <span class="w-12 h-px bg-primary group-hover:w-16 transition-all"></span>OUR FULL STORY
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Join the Club (Form) -->
+<section class="py-32 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+    <div class="glass-card p-12 rounded-3xl text-center reveal">
+      <h3 class="font-display text-display mb-4">Start Your Journey</h3>
+      <p class="text-on-surface-variant mb-12 text-lg">Your first session is on the house. Tell us a bit about yourself and we'll get you booked in.</p>
+      <form class="space-y-6 text-left max-w-2xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="font-label-sm text-on-surface-variant">NAME</label>
+            <input class="w-full bg-surface-container border-none focus:ring-2 focus:ring-primary rounded-lg py-4 px-6 text-on-surface placeholder:opacity-30" placeholder="Your name" type="text"/>
+          </div>
+          <div class="space-y-2">
+            <label class="font-label-sm text-on-surface-variant">EMAIL</label>
+            <input class="w-full bg-surface-container border-none focus:ring-2 focus:ring-primary rounded-lg py-4 px-6 text-on-surface placeholder:opacity-30" placeholder="your@email.com" type="email"/>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <label class="font-label-sm text-on-surface-variant">WHAT BRINGS YOU HERE?</label>
+          <div class="flex flex-wrap gap-3">
+            <button class="px-6 py-3 rounded-full border border-outline-variant/30 hover:border-primary transition-colors text-label-md" type="button">Getting Fit</button>
+            <button class="px-6 py-3 rounded-full border border-outline-variant/30 hover:border-primary transition-colors text-label-md" type="button">Learning Skills</button>
+            <button class="px-6 py-3 rounded-full border border-outline-variant/30 hover:border-primary transition-colors text-label-md" type="button">Finding Community</button>
+            <button class="px-6 py-3 rounded-full border border-outline-variant/30 hover:border-primary transition-colors text-label-md" type="button">Stress Relief</button>
+          </div>
+        </div>
+        <button class="w-full bg-primary-container text-on-primary-container py-5 rounded-full font-label-md font-bold text-lg hover:scale-[0.98] transition-transform mt-8 shadow-xl shadow-primary-container/10">Request My Free Session</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+    <div class="space-y-4">
+      <div class="flex items-center gap-3">
+        <img alt="MTSC Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE5MO_We5hTgucGl8pVByHGtOhiQdBv3fGJBFW_CGBpnrewEXa_7h_Y88M1E3tLFh_fNAifZ1-wQOdDTngyTm_susOHutjMKO1YqP13FdTcvNQkLpyv5YObg53qC2zj3jMfgECTTyq-Yc2sWk2KUlBlP07KqzIKFD4TulX1D9rKkyq1hMfJv9mu-IhWBBK6W_-Gswoxt7XJbvXaPCUDMqtod_tM_3HhKWKOJp3sE85osNVUXdJi2w4o3z3A-_tAuUHyvLZDUTDStcO"/>
+        <div class="font-display text-headline-sm font-bold text-primary">MTSC</div>
+      </div>
+      <p class="text-on-surface-variant text-label-sm leading-relaxed max-w-xs">MUAY THAI LONDON. Building grit and community in the heart of the city.</p>
+    </div>
+    <div>
+      <h6 class="font-label-md text-on-surface font-bold mb-4 uppercase tracking-widest">Pages</h6>
+      <ul class="space-y-2">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="classes.html">Adult Classes</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="kids.html">Kids Classes</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="corporate.html">Corporate</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="community.html">Community</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="backpackers.html">Backpackers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="font-label-md text-on-surface font-bold mb-4 uppercase tracking-widest">Connect</h6>
+      <ul class="space-y-2">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="#">Instagram</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="#">TikTok</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors text-label-md" href="#">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="flex flex-col justify-between">
+      <p class="text-on-surface-variant text-label-sm">© 2024 Muay Thai London. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('button[type="button"]').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('bg-primary');
+      toggle.classList.toggle('text-on-primary');
+      toggle.classList.toggle('border-primary');
+    });
+  });
+
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MUAY THAI LONDON | Corporate Training</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface": "#131315", "on-surface": "#e5e1e4", "surface-container-low": "#1c1b1d",
+          "surface-container": "#201f22", "surface-variant": "#353437", "secondary-fixed": "#e2e2e2",
+          "on-primary-fixed-variant": "#5f4100", "tertiary": "#d6d4d7", "primary-fixed-dim": "#ffba32",
+          "outline": "#9e8f79", "inverse-surface": "#e5e1e4", "secondary": "#c6c6c7",
+          "on-secondary-fixed": "#1a1c1c", "on-error": "#690005", "on-secondary-fixed-variant": "#454747",
+          "tertiary-fixed-dim": "#c8c6c9", "surface-container-lowest": "#0e0e10",
+          "tertiary-fixed": "#e4e1e5", "tertiary-container": "#bab8bc", "surface-container-highest": "#353437",
+          "surface-bright": "#39393b", "secondary-fixed-dim": "#c6c6c7", "on-tertiary": "#303033",
+          "on-tertiary-container": "#49494c", "on-error-container": "#ffdad6",
+          "primary-container": "#f3ac02", "on-tertiary-fixed": "#1b1b1e", "on-primary-container": "#634400",
+          "on-primary-fixed": "#271900", "primary": "#ffcd7a", "primary-fixed": "#ffdeab",
+          "on-background": "#e5e1e4", "on-secondary-container": "#b4b5b5", "on-surface-variant": "#d5c4ac",
+          "inverse-primary": "#7e5700", "error-container": "#93000a", "on-secondary": "#2f3131",
+          "secondary-container": "#454747", "inverse-on-surface": "#313032", "on-primary": "#422c00",
+          "on-tertiary-fixed-variant": "#47464a", "error": "#ffb4ab", "surface-container-high": "#2a2a2c",
+          "background": "#131315", "surface-tint": "#ffba32", "outline-variant": "#514533", "surface-dim": "#131315"
+        },
+        borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        spacing: { "stack-lg": "32px", "stack-sm": "8px", "margin-mobile": "20px", "unit": "4px", "margin-desktop": "64px", "stack-md": "16px", "gutter": "24px", "container-max": "1280px" },
+        fontFamily: { "body-lg": ["Sora"], "label-sm": ["Sora"], "headline-md": ["Sora"], "headline-lg": ["Sora"], "display": ["Sora"], "body-md": ["Sora"], "label-md": ["Sora"], "headline-lg-mobile": ["Sora"] },
+        fontSize: {
+          "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "label-sm": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+          "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+          "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+          "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-card { background: rgba(24,24,27,0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+  .gold-gradient-text { background: linear-gradient(135deg, #ffcd7a 0%, #f3ac02 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  body { background-color: #09090b; color: #e5e1e4; overflow-x: hidden; font-family: 'Sora', sans-serif; }
+  .ambient-glow { position: absolute; width: 40vw; height: 40vw; background: radial-gradient(circle, rgba(243,172,2,0.05) 0%, rgba(243,172,2,0) 70%); pointer-events: none; z-index: 0; }
+  #mobile-menu { display: none; }
+  #mobile-menu.open { display: block; }
+</style>
+</head>
+<body class="font-body-md text-on-surface">
+
+<!-- Navigation -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <div class="flex items-center gap-4">
+      <img alt="MUAY THAI LONDON" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE5MO_We5hTgucGl8pVByHGtOhiQdBv3fGJBFW_CGBpnrewEXa_7h_Y88M1E3tLFh_fNAifZ1-wQOdDTngyTm_susOHutjMKO1YqP13FdTcvNQkLpyv5YObg53qC2zj3jMfgECTTyq-Yc2sWk2KUlBlP07KqzIKFD4TulX1D9rKkyq1hMfJv9mu-IhWBBK6W_-Gswoxt7XJbvXaPCUDMqtod_tM_3HhKWKOJp3sE85osNVUXdJi2w4o3z3A-_tAuUHyvLZDUTDStcO"/>
+      <span class="font-display text-headline-md font-bold text-primary tracking-tighter hidden md:block">MUAY THAI LONDON</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-stack-lg">
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="index.html">Home</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="classes.html">Adult Classes</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="kids.html">Kids Classes</a>
+      <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="corporate.html">Corporate</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="community.html">Community</a>
+      <a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-md text-label-md" href="backpackers.html">Backpackers</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md text-label-md font-bold scale-95 active:scale-90 transition-transform">Join Us</button>
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+        <span class="w-6 h-0.5 bg-on-surface block"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden bg-surface border-t border-outline-variant/20 px-margin-mobile py-4 flex flex-col gap-4">
+    <a class="text-on-surface-variant font-medium font-label-md" href="index.html">Home</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="classes.html">Adult Classes</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="kids.html">Kids Classes</a>
+    <a class="text-primary font-bold font-label-md" href="corporate.html">Corporate</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="community.html">Community</a>
+    <a class="text-on-surface-variant font-medium font-label-md" href="backpackers.html">Backpackers</a>
+  </div>
+</header>
+
+<main class="pt-24">
+  <!-- Hero Section -->
+  <section class="relative min-h-[80vh] flex items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+    <div class="ambient-glow top-0 right-0"></div>
+    <div class="ambient-glow bottom-0 left-0"></div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10">
+      <div class="space-y-stack-md">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-variant/30 border border-outline-variant/20">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          <span class="text-label-sm font-label-sm text-primary uppercase tracking-widest">London's Premier Corporate Wellness</span>
+        </div>
+        <h1 class="font-display text-display lg:text-[64px] leading-tight">Elevate Performance <br/>Through <span class="gold-gradient-text">Precision</span></h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">MTSC Corporate delivers elite Muay Thai training designed for high-stakes London teams. Replace burnout with physical vigor and mental sharpness.</p>
+        <div class="flex flex-wrap gap-stack-md pt-stack-sm">
+          <button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md text-label-md font-bold hover:brightness-110 transition-all">Book Team Session</button>
+          <button class="border border-outline text-on-surface px-8 py-4 rounded-lg font-label-md text-label-md font-bold hover:bg-surface-variant/20 transition-all">Private Consultations</button>
+        </div>
+      </div>
+      <div class="relative group hidden lg:block">
+        <div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-50 group-hover:opacity-70 transition-opacity"></div>
+        <div class="relative aspect-square overflow-hidden rounded-2xl border border-outline-variant/30">
+          <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzGu1GOxu21Zn6ewahlVbwjBB4saOxEEOE7bY_rPuGlfNY3_xc9DOazKCHGemoaJauFLi8u_D84dJg_nPjF1ZQ-lO87gfghrBQYsyS-I44ISoxIaqiIeQ-HHtwVBMRWUeH1GceaqlUGqujt26PopsKBmKECLf48yQujGzYja3UQwHzqsE1-VrcEdnnkM0r_z5wd1AA7F35zBOP0-RccRH9CsnT_yTP523gOEY975CwwFAc1xFdS7OBo-R2FoKR34eSw2zojQsOKHtA" alt="Corporate Muay Thai"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Proof Points -->
+  <section class="py-stack-lg bg-surface-container-lowest border-y border-outline-variant/10">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+      <div><div class="text-primary font-display text-headline-lg font-bold">120+</div><div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-tighter">London Teams Trained</div></div>
+      <div><div class="text-primary font-display text-headline-lg font-bold">98%</div><div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-tighter">Wellness Retention</div></div>
+      <div><div class="text-primary font-display text-headline-lg font-bold">60m</div><div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-tighter">Average Sessions</div></div>
+      <div><div class="text-primary font-display text-headline-lg font-bold">Elite</div><div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-tighter">MTCC Certified</div></div>
+    </div>
+  </section>
+
+  <!-- Bento Grid -->
+  <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <div class="mb-stack-lg">
+      <h2 class="font-headline-lg text-headline-lg mb-4">Strategic Wellness Architecture</h2>
+      <p class="text-on-surface-variant max-w-xl">We don't just teach combat. We build resilient corporate cultures through technical mastery and disciplined movement.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      <div class="md:col-span-2 glass-card p-stack-lg rounded-2xl flex flex-col justify-between group hover:border-primary/40 transition-all">
+        <div class="space-y-stack-md">
+          <span class="material-symbols-outlined text-primary text-4xl">psychology</span>
+          <h3 class="font-headline-md text-headline-md">Mental Fortitude &amp; Clarity</h3>
+          <p class="text-on-surface-variant max-w-md">Our training sessions are calculated to reset the central nervous system. Using Muay Thai's rhythmic breathing and focused striking patterns, we facilitate a state of 'flow' that enhances decision-making under pressure.</p>
+        </div>
+        <div class="mt-stack-lg h-48 w-full overflow-hidden rounded-xl">
+          <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG7E342IE536UYtcmuvJVh-41pvazO3cgjwMbAxeFDtLtqdEwQVzEe4MAd3f4uFiEdG8ahKV-BwHnQmXax7QlH92zxoufvqdN4UKRu23jbpMM6kUwj8vAP70a4E2zNHasd3BXOo7oGH3ef7_dHN4yYBKvTKEKuqBbcP46RtGxhxYKQM56EPeeKb3_-_t9hT3nqHZsltXVkNIHlC4FkCCdO1_GuctNe6OirHsdM6S9hRnwzhDON-e3fPkLtkQ6EObpW3Biz60Z6XrZw" alt="Mental fortitude training"/>
+        </div>
+      </div>
+      <div class="bg-surface-container p-stack-lg rounded-2xl border border-outline-variant/10 flex flex-col justify-between">
+        <div class="space-y-stack-md">
+          <span class="material-symbols-outlined text-primary text-4xl">groups</span>
+          <h3 class="font-headline-md text-headline-md">Team Synergy</h3>
+          <p class="text-on-surface-variant">Move beyond the boardroom. Build authentic trust and communication through partner drills and shared physical challenges.</p>
+        </div>
+        <ul class="space-y-3 mt-stack-md">
+          <li class="flex items-center gap-3 text-label-md"><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Structured Group Drills</li>
+          <li class="flex items-center gap-3 text-label-md"><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Conflict Resolution Mechanics</li>
+          <li class="flex items-center gap-3 text-label-md"><span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> Shared Goal Achievement</li>
+        </ul>
+      </div>
+      <div class="bg-surface-container-low p-stack-lg rounded-2xl border border-outline-variant/5 hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-primary text-3xl mb-4">bolt</span>
+        <h4 class="font-headline-md text-headline-md mb-2">Vigor</h4>
+        <p class="text-on-surface-variant text-body-md">High-intensity metabolic conditioning that eliminates sedentary sluggishness.</p>
+      </div>
+      <div class="bg-surface-container-low p-stack-lg rounded-2xl border border-outline-variant/5 hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-primary text-3xl mb-4">shield</span>
+        <h4 class="font-headline-md text-headline-md mb-2">Resilience</h4>
+        <p class="text-on-surface-variant text-body-md">Cultivating the physical capacity to endure high-workload environments.</p>
+      </div>
+      <div class="bg-surface-container-low p-stack-lg rounded-2xl border border-outline-variant/5 hover:bg-surface-container transition-colors">
+        <span class="material-symbols-outlined text-primary text-3xl mb-4">architecture</span>
+        <h4 class="font-headline-md text-headline-md mb-2">Precision</h4>
+        <p class="text-on-surface-variant text-body-md">Developing coordination and neuro-muscular efficiency through technical skill.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Options -->
+  <section class="py-24 bg-surface-container-lowest">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="text-center mb-16">
+        <h2 class="font-headline-lg text-headline-lg mb-4">Booking Pathways</h2>
+        <p class="text-on-surface-variant mx-auto max-w-lg">Choose the intensity and format that aligns with your team's operational requirements.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+        <div class="relative p-8 rounded-3xl overflow-hidden border border-outline-variant/20 hover:border-primary transition-all group">
+          <div class="absolute inset-0 z-0 opacity-20 group-hover:scale-110 transition-transform duration-1000">
+            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzRi0cLmirTdEYyuDGltUqMNgm5ZpjPRhA94sxmMTn_c5KPRgA8uZtYqWOe1u-2DqGtPgIlhmEQpi9cV0TDIUV3wX93vp2JHnDKBXH7YxBJttzmT7mBRAFtT04N-BZIsL-hkeOKmVTZ-8o4tLmKoCFiH1oQQnyfoKrcLj_584_ZUH5aBLI4tTzU8o4Em1BGl0Q4r2ZkAiG2vuTk3YKwff_qnu73G4V1ANkdwrOjI9NJ3i35hORSPMvwiW3D4KePLQvygpri1gJnMRs" alt="Private coaching"/>
+          </div>
+          <div class="relative z-10 space-y-4">
+            <h3 class="font-headline-md text-headline-md">Private 1-on-1 Sessions</h3>
+            <p class="text-on-surface-variant text-body-md">Personalized technical coaching for leadership. High-impact sessions scheduled around the most demanding itineraries.</p>
+            <ul class="space-y-2 py-4">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">done</span> Flexible Scheduling</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">done</span> Dedicated Elite Trainer</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">done</span> Nutrition &amp; Recovery Plans</li>
+            </ul>
+            <button class="w-full py-4 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-black transition-all">Enquire Privately</button>
+          </div>
+        </div>
+        <div class="relative p-8 rounded-3xl overflow-hidden border border-outline-variant/20 hover:border-primary transition-all group bg-surface-container-high">
+          <div class="absolute inset-0 z-0 opacity-20 group-hover:scale-110 transition-transform duration-1000">
+            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeH2ZYbmNRlxNM8Zy3sIq1CXfb0WiT88sXm3WoUjvL8vfKTKTSaVZVZ9WjN3BvirdzhH4iJpBGMXC6dx4bzPdaPrEO-FhrRAAPcq2ouQmPFbX_rAKRtTGmeIA9wAUGs3TpYnNLZpOksu8CivmHahYDvBY27_10C0emKrd83twy_-mO4gAh7XePkzKAY-4n9B3MieClT0oHitB_4i45LgE2pweURdQBDfs9kWwu6C1ypBPseE8TT9yjQESMKYbcOiRqZR0nhNdhoStt" alt="Team training"/>
+          </div>
+          <div class="relative z-10 space-y-4">
+            <h3 class="font-headline-md text-headline-md">Team Mastery Bookings</h3>
+            <p class="text-on-surface-variant text-body-md">Scalable sessions for departments of up to 20. Designed to boost morale and physical wellness across the board.</p>
+            <ul class="space-y-2 py-4">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">done</span> Collaborative Pad Work</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">done</span> Team-Building Mechanics</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">done</span> Post-Session Recovery Access</li>
+            </ul>
+            <button class="w-full py-4 bg-primary text-black rounded-lg font-bold hover:brightness-110 transition-all">Reserve Team Slot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center relative overflow-hidden">
+    <div class="relative z-10 max-w-2xl mx-auto space-y-stack-md">
+      <h2 class="font-display text-display leading-tight">Ready to recalibrate your team's energy?</h2>
+      <p class="text-body-lg text-on-surface-variant">Contact our corporate relations team to design a bespoke training architecture for your London headquarters.</p>
+      <div class="pt-stack-md">
+        <a class="inline-block bg-primary-container text-on-primary-container px-12 py-5 rounded-full font-bold text-headline-md hover:scale-105 transition-transform shadow-lg shadow-primary/10" href="mailto:corporate@muaythailondon.com">Connect with MTSC</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/10 mt-24">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+    <div class="space-y-4">
+      <div class="font-display text-headline-sm font-bold text-primary">MUAY THAI LONDON</div>
+      <p class="text-on-surface-variant font-body-md">Precision Muay Thai training for the modern London ecosystem.</p>
+    </div>
+    <div>
+      <h4 class="font-label-md text-label-md text-on-surface font-bold mb-4 uppercase tracking-widest">Pages</h4>
+      <ul class="space-y-2">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="index.html">Home</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="classes.html">Adult Classes</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="kids.html">Kids Classes</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="community.html">Community</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="backpackers.html">Backpackers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label-md text-label-md text-on-surface font-bold mb-4 uppercase tracking-widest">Connect</h4>
+      <ul class="space-y-2">
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Instagram</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">TikTok</a></li>
+        <li><a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h4 class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-widest">Subscribe</h4>
+      <div class="flex gap-2">
+        <input class="bg-surface-variant/20 border border-outline-variant rounded-lg px-4 py-2 text-sm w-full focus:outline-none focus:border-primary" placeholder="Email" type="email"/>
+        <button class="bg-primary p-2 rounded-lg text-black"><span class="material-symbols-outlined">send</span></button>
+      </div>
+      <p class="text-[10px] text-on-surface-variant">© 2024 Muay Thai London. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observerOptions = { threshold: 0.1 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+        entry.target.classList.remove('opacity-0', 'translate-y-10');
+      }
+    });
+  }, observerOptions);
+  document.querySelectorAll('section > div').forEach(el => {
+    el.classList.add('transition-all', 'duration-700', 'ease-out', 'opacity-0', 'translate-y-10');
+    observer.observe(el);
+  });
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) { header.classList.add('py-2'); header.classList.remove('py-4'); }
+    else { header.classList.add('py-4'); header.classList.remove('py-2'); }
+  });
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
